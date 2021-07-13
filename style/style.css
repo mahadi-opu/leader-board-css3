@@ -5,16 +5,20 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    padding: 0;
+    margin: 0;
 }
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction:column;
 }
 .container{
     background: #FFFFFF;
     border-radius: 5px;
     width: 870px;
     padding: 30px;
+    margin-bottom: 21px;
 }
 /* top players style */
 .top-players{
@@ -43,6 +47,7 @@ main{
 .player-name{
     margin-left: 16px;
     font-size: 18px;
+    text-decoration: none;
 }
 hr{
     border: 1px solid #D1D1D1;
@@ -51,7 +56,6 @@ hr{
 .blogs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
 }
 .blog{
     display: flex;
@@ -62,7 +66,65 @@ hr{
     height: 117px;
 }
 .blog-info{
-
     margin-left: 16px;
-
+}
+.blog-auther a{
+    text-decoration: none;
+}
+/*------ corses -----*/
+.corses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.course{
+    border-radius: 7px;
+    padding: 15px;
+    margin: 0px 12px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05); 
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
+}
+.course:first-child{
+    margin-left: 0px;
+}
+.course:last-child{
+    margin-right: 0px;
+} 
+.course-auther a{
+    text-decoration: none;
+}
+.course-banner img{
+    width:100%;
+    height: 104px;
+    border-radius: 10px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-duration{
+    Width: 99.63px;
+    Height: 29.38px;
+    text-align: center;
+    background: #FEE5DF;
+    border-radius: 14.6913px;
+}
+/*---footer----*/
+footer{
+    background-color: #562EFF;
+    padding: 15px 0px;
+}
+footer p{
+    text-align: center;
+    color: #F3F1FF;
+}
+footer a{
+    color: #F3F1FF;
+    text-decoration: none;
 }
